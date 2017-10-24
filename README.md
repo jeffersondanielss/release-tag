@@ -1,5 +1,7 @@
 # Release
 
+[![Build Status](https://travis-ci.org/jeffersondanielss/release.svg?branch=master)](https://travis-ci.org/jeffersondanielss/release)
+
 <center>
   <img src="preview.png" alt="how use preview">
 </center>
