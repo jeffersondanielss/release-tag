@@ -11,14 +11,14 @@ test('getCurrentBranch é uma função', t => {
 })
 
 test('getCurrentBranch retorna uma string', t => {
-  let branchType = typeof getCurrentBranch('* master')
+  let branchType = typeof getCurrentBranch()
   let result = 'string'
 
   t.is(branchType, result)
 })
 
 test('getCurrentBranch retorna branch atual', t => {
-  let branch = getCurrentBranch()
+  let branch = getCurrentBranch(`echo '* master\n   develop\n'`)
   let result = 'master'
 
   t.is(branch, result)

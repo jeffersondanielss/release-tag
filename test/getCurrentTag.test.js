@@ -24,10 +24,3 @@ test('retorna nova tag caso der catch', t => {
 
   t.is(tagType, result)
 })
-
-test('retorna nova tag bugfix caso der catch e o type for bugfix', t => {
-  let tagType = getCurrentTag('dev', '')
-  let result = '0.0.0.0.master'
-
-  t.is(tagType, result)
-})

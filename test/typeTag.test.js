@@ -44,10 +44,3 @@ test('Incrementar array dependendo do tipo dev de release', t => {
 
   t.is(operation, result)
 })
-
-test('Incrementar array dependendo do tipo, sem tag dev', t => {
-  let operation = typeTag('dev', [5, 0, 2])
-  let result = '5.0.2.1.master'
-
-  t.is(operation, result)
-})
