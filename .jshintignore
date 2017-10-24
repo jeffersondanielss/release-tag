@@ -1,0 +1,2 @@
+# JSHINT not support async/await
+./lib/release.js

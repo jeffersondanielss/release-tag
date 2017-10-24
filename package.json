@@ -1,0 +1,25 @@
+{
+  "name": "release",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Jefferson Daniel <jeffersondanielss@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc ava -v",
+    "lint": "node_modules/jshint/bin/jshint ./**/*.js"
+  },
+  "dependencies": {
+    "ava": "^0.22.0",
+    "inquirer": "^3.3.0"
+  },
+  "bin": {
+    "release": "index.js"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5",
+    "nyc": "^11.2.1"
+  },
+  "nyc": {
+    "all": true
+  }
+}
