@@ -1,6 +1,7 @@
 {
   "name": "release-tag",
-  "version": "0.2.2",
+  "description": "Updating the project tag based on the type of change.",
+  "version": "0.2.3",
   "main": "index.js",
   "author": "Jefferson Daniel <jeffersondanielss@gmail.com>",
   "license": "MIT",
