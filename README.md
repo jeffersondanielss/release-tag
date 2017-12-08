@@ -1,6 +1,8 @@
 # Release
 
 [![Build Status](https://travis-ci.org/jeffersondanielss/release.svg?branch=master)](https://travis-ci.org/jeffersondanielss/release)
+[![Maintainability](https://api.codeclimate.com/v1/badges/102c4626e790a07e61a4/maintainability)](https://codeclimate.com/github/jeffersondanielss/release/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/102c4626e790a07e61a4/test_coverage)](https://codeclimate.com/github/jeffersondanielss/release/test_coverage)
 
 <center>
   <img src="preview.png" alt="how use preview">
