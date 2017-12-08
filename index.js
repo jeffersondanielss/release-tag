@@ -4,13 +4,13 @@
 
 const inquirer = require('inquirer')
 const { en } = require('./lib/questions')
-const release = require('./lib/release')
+const releaseTag = require('./lib/releaseTag')
 const { resolveArgs, args } = require('./lib/resolveArgs')
 
 const index = () => {
   inquirer
     .prompt(en)
-    .then(({ type }) => release(type), err => console.log('Error :', err))
+    .then(({ type }) => releaseTag(type), err => console.log('Error :', err))
 }
 
 args

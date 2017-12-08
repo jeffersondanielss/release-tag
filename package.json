@@ -1,6 +1,6 @@
 {
-  "name": "release",
-  "version": "0.1.4",
+  "name": "release-tag",
+  "version": "0.2.0",
   "main": "index.js",
   "author": "Jefferson Daniel <jeffersondanielss@gmail.com>",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "inquirer": "^3.3.0"
   },
   "bin": {
-    "release": "index.js"
+    "release-tag": "index.js"
   },
   "devDependencies": {
     "jshint": "^2.9.5",
