@@ -1,10 +1,10 @@
 'use strict'
 
 const test = require('ava')
-const release = require('../lib/release')
+const releaseTag = require('../lib/releaseTag')
 
-test('release é uma função', t => {
-  let isFunction = typeof release
+test('releaseTag é uma função', t => {
+  let isFunction = typeof releaseTag
   let result = 'function'
 
   t.is(isFunction, result)
