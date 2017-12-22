@@ -30,6 +30,11 @@ $ release-tag
 ```
 
 ## Development
+Scripts useful at the time of development, example:
+
+```bash
+$ yarn test
+```
 
 command | description 
 --------| -----------
@@ -37,9 +42,3 @@ build | Remove the types and build in the / lib folder
 type | Does static type checking
 test | run unit tests
 lint | run the linter
-
-## Run tests
-
-```bash
-$ yarn test
-```
