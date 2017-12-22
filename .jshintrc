@@ -6,6 +6,5 @@
   "camelcase": true,
   "indent": true,
   "nocomma": true,
-  "quotmark": "single",
-  "strict": true
+  "quotmark": "single"
 }

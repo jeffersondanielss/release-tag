@@ -6,8 +6,10 @@
   "author": "Jefferson Daniel <jeffersondanielss@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "babel src/ -d lib/",
+    "type": "yarn flow status",
     "test": "nyc ava -v",
-    "lint": "node_modules/jshint/bin/jshint ./**/*.js"
+    "lint": "node_modules/jshint/bin/jshint ./lib/*.js"
   },
   "dependencies": {
     "ava": "^0.22.0",
@@ -17,10 +19,16 @@
     "release-tag": "index.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.61.0",
     "jshint": "^2.9.5",
     "nyc": "^11.2.1"
   },
   "nyc": {
-    "all": true
+    "all": true,
+    "exclude": [
+      "src"
+    ]
   }
 }

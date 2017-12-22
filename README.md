@@ -29,6 +29,15 @@ $ npm i -g release-tag
 $ release-tag
 ```
 
+## Development
+
+command | description 
+--------| -----------
+build | Remove the types and build in the / lib folder
+type | Does static type checking
+test | run unit tests
+lint | run the linter
+
 ## Run tests
 
 ```bash
