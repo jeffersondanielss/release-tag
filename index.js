@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-'use strict'
+// @flow
 
 const inquirer = require('inquirer')
 const { en } = require('./lib/questions')
@@ -10,7 +10,10 @@ const { resolveArgs, args } = require('./lib/resolveArgs')
 const index = () => {
   inquirer
     .prompt(en)
-    .then(({ type }) => releaseTag(type), err => console.log('Error :', err))
+    .then(
+      ({ type }) => releaseTag(type),
+      (err) => console.log('Error :', err)
+    )
 }
 
 args
