@@ -9,7 +9,8 @@
     "build": "babel src/ -d lib/",
     "type": "yarn flow status",
     "test": "nyc ava -v",
-    "lint": "node_modules/jshint/bin/jshint ./lib/*.js"
+    "lint": "node_modules/jshint/bin/jshint ./lib/*.js",
+    "doctor": "yarn build && yarn type && yarn test && yarn lint"
   },
   "dependencies": {
     "ava": "^0.22.0",

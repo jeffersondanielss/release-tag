@@ -1,2 +1,2 @@
 # JSHINT not support async/await
-./lib/release.js
+./lib/releaseTag.js

@@ -5,13 +5,15 @@ const tagToArray = require('./tagToArray')
 const getNewTag = require('./getNewTag')
 const setNewTag = require('./setNewTag')
 const getCurrentTag = require('./getCurrentTag')
+const answers = require('./answers')
 
 /**
  * Executa a sequencia de funções para pegar a tag atual e gerar uma nova
  * 
  */
 
-const release = async (type: string) => {
+const release = async (): Promise<any> => {
+  const { type } = await answers()
   const currentTag = await getCurrentTag(type)
   const tagArray = await tagToArray(currentTag)
   const newTag = await filterType(type, tagArray)
