@@ -42,3 +42,4 @@ build | Remove the types and build in the / lib folder
 type | Does static type checking
 test | run unit tests
 lint | run the linter
+doctor | Run the build, unit tests, type checking, and linter to see if everything is fine
