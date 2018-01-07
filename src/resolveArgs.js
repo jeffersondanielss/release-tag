@@ -7,10 +7,9 @@ const args = process.argv.slice(2, 3).toString()
 /**
  * Filtra argumentos recebidos
  * 
- * @returns {string}
  */
 
-const resolveArgs = (arg: string = args) => {
+const resolveArgs = (arg: string = args): string => {
   switch (arg) {
     case '--version':
     case '-v':

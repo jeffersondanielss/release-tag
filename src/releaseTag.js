@@ -12,7 +12,7 @@ const answers = require('./answers')
  * 
  */
 
-const release = async (): Promise<any> => {
+const releaseTag = async (): Promise<any> => {
   const { type } = await answers()
   const currentTag = await getCurrentTag(type)
   const tagArray = await tagToArray(currentTag)
@@ -23,4 +23,4 @@ const release = async (): Promise<any> => {
   console.log(stdout)
 }
 
-module.exports = release
+module.exports = releaseTag

@@ -5,10 +5,9 @@ const increment = require('./increment')
 /**
  * Filtra o tipo da tag a ser incrementada
  * 
- * @returns {string}
  */
 
-const filterType = (type: string, tag: Array<string | number>) => {
+const filterType = (type: string, tag: Array<string | number>): string => {
   switch (type) {
     case 'major':
       return increment(tag, 0)

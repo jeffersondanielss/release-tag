@@ -6,10 +6,9 @@ const command = require('./command')
 /**
  * Pega a tag mais recente do projeto
  * 
- * @returns {string}
  */
 
-const getCurrentTag = (type: string, cmd: string = 'git describe') => {
+const getCurrentTag = (type: string, cmd: string = 'git describe'): string => {
   try {
     return command(cmd)
   } catch (error) {

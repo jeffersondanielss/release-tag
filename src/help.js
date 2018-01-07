@@ -3,10 +3,9 @@
 /**
  * Exibe mensagem de ajuda para o usuário
  * 
- * @returns {string}
  */
 
-const help = () => `
+const help = (): string => `
   Commands
 
   - release

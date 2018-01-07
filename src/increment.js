@@ -6,10 +6,9 @@ const createDevTag = require('./createDevTag')
 /**
  * Incrementa um número no index do array recebido
  * 
- * @returns {string}
  */
 
-const increment = (tag: Array<string | number>, targetIndex: number) => {
+const increment = (tag: Array<string | number>, targetIndex: number): string => {
   tag = createDevTag(tag, targetIndex)
   tag = removeDevTag(tag, targetIndex)
 

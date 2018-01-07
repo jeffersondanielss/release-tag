@@ -5,10 +5,9 @@ const command = require('./command')
 /**
  * Pega a branch atual do projeto
  * 
- * @returns {string}
  */
 
-const getCurrentBranch = (cmd: string = 'git branch') =>
+const getCurrentBranch = (cmd: string = 'git branch'): string =>
   command(cmd)
     .split('\n')
     .filter(current => !current.indexOf('* '))

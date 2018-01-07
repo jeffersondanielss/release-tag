@@ -3,11 +3,10 @@
 /**
  * Remove a tag de desenvolvimento se uma maior for atualizada
  * 
- * @returns {array}
  */
 
- const removeDevTag = (tag: Array<string | number>, tagIndex: number) => {
-  const isNotDevTag = tagIndex < 3
+ const removeDevTag = (tag: Array<string | number>, tagIndex: number): Array<string | number> => {
+  const isNotDevTag: boolean = tagIndex < 3
 
   if (isNotDevTag) {
     return tag

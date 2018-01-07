@@ -2,11 +2,10 @@
 
 /**
  * Transforma tag em um array
- * 
- * @returns {array} 
+ *
  */
 
-const tagToArray = (currentTag: string) => {
+const tagToArray = (currentTag: string): Array<string|number> => {
   let tag = currentTag.split('-')
   tag = tag[0].split('.')
 
