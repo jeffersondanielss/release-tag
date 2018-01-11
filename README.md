@@ -43,3 +43,6 @@ type | Does static type checking
 test | run unit tests
 lint | run the linter
 doctor | Run the build, unit tests, type checking, and linter to see if everything is fine
+doc:prepare | Generate docs
+doc:server | Run server of docs pages
+doc | Run build, doc:prepare and doc:server scripts
