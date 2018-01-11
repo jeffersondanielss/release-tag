@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#answers">answers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#command">command</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createTagDev">createTagDev</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#filterType">filterType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getCurrentBranch">getCurrentBranch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getCurrentTag">getCurrentTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getNewTag">getNewTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#help">help</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#increment">increment</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#releaseTag">releaseTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeDevTag">removeDevTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#resolveArgs">resolveArgs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setNewTag">setNewTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#tagToArray">tagToArray</a></span></li>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>Release Tag</h1><p><a href="https://travis-ci.org/jeffersondanielss/release-tag"><img src="https://travis-ci.org/jeffersondanielss/release-tag.svg?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/jeffersondanielss/release-tag/maintainability"><img src="https://api.codeclimate.com/v1/badges/d1fe409e97fa1cafc973/maintainability" alt="Maintainability"></a>
+<a href="https://codeclimate.com/github/jeffersondanielss/release-tag/test_coverage"><img src="https://api.codeclimate.com/v1/badges/d1fe409e97fa1cafc973/test_coverage" alt="Test Coverage"></a></p>
+<center>
+  <img src="preview.png" alt="how use preview">
+</center>
+
+<h2>What is it?</h2><p>Updating the project tag based on the type of change.</p>
+<ul>
+<li>Major, Big changes in the API (1.0.0)</li>
+<li>Minor, Adding features (0.1.0)</li>
+<li>Path, Bug fixes (0.0.1)</li>
+<li>Dev, Development versions (0.0.0.1.bug)</li>
+</ul>
+<h2>How install?</h2><p>Install Globally</p>
+<pre class="prettyprint source lang-bash"><code>$ npm i -g release-tag</code></pre><h2>how use</h2><pre class="prettyprint source lang-bash"><code>$ release-tag</code></pre><h2>Development</h2><p>Scripts useful at the time of development, example:</p>
+<pre class="prettyprint source lang-bash"><code>$ yarn test</code></pre><table>
+<thead>
+<tr>
+<th>command</th>
+<th>description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>Remove the types and build in the / lib folder</td>
+</tr>
+<tr>
+<td>type</td>
+<td>Does static type checking</td>
+</tr>
+<tr>
+<td>test</td>
+<td>run unit tests</td>
+</tr>
+<tr>
+<td>lint</td>
+<td>run the linter</td>
+</tr>
+<tr>
+<td>doctor</td>
+<td>Run the build, unit tests, type checking, and linter to see if everything is fine</td>
+</tr>
+</tbody>
+</table></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jan 10 2018 22:22:21 GMT-0200 (-02) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
