@@ -10,7 +10,10 @@
     "type": "yarn flow status",
     "test": "nyc ava -v",
     "lint": "node_modules/jshint/bin/jshint ./lib/*.js",
-    "doctor": "yarn build && yarn type && yarn test && yarn lint"
+    "doctor": "yarn build && yarn type && yarn test && yarn lint",
+    "doc:prepare": "yarn jsdoc --configure .jsdoc.json --verbose",
+    "doc:server": "http-server ./documentation",
+    "doc": "yarn build && yarn doc:prepare && yarn doc:server"
   },
   "dependencies": {
     "ava": "^0.22.0",
@@ -23,13 +26,17 @@
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
     "flow-bin": "^0.61.0",
+    "http-server": "^0.11.1",
+    "jsdoc": "^3.5.5",
     "jshint": "^2.9.5",
+    "minami": "^1.2.3",
     "nyc": "^11.2.1"
   },
   "nyc": {
     "all": true,
     "exclude": [
-      "src"
+      "src",
+      "documentation"
     ]
   }
 }
