@@ -10,6 +10,7 @@ const answers = require('./answers')
 /**
  * Executa a sequencia de funções para pegar a tag atual e gerar uma nova
  * 
+ * @returns {Promise} Exibe no console o output do git ao registro da nova tag.
  */
 
 const releaseTag = async (): Promise<any> => {

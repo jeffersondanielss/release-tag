@@ -3,6 +3,9 @@
 /**
  * Remove a tag de desenvolvimento se uma maior for atualizada
  * 
+ * @param {Array<string | number>} tag - Array com os campos da tag atual.
+ * @param {number} targetIndex - item do array que foi solicitada a alteração.
+ * @returns {Array<string | number>} - tag com campo de dev removido ou tag recebida.
  */
 
  const removeDevTag = (tag: Array<string | number>, tagIndex: number): Array<string | number> => {

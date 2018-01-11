@@ -3,6 +3,8 @@
 /**
  * Transforma tag em um array
  *
+ * @param {string} currentTag - tag mais atual no git.
+ * @returns {Array<string|number>} tag mais atual dividida em um array.
  */
 
 const tagToArray = (currentTag: string): Array<string|number> => {
