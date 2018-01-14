@@ -9,15 +9,7 @@ const { en } = require('./questions')
  * @returns {Promise} resposta da interação do usuário com o prompt.
  */
 
-const answers = (): Promise<any> => {
-  return new Promise(function(resolve, reject){
-    inquirer
-      .prompt(en)
-      .then(
-        resp => resolve(resp),
-        err => reject(err)
-      )
-  })
-}
+const answers = (): Promise<any> =>
+  inquirer.prompt(en)
 
 module.exports = answers
