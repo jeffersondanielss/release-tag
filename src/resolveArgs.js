@@ -7,8 +7,11 @@ const args = process.argv.slice(2, 3).toString()
 /**
  * Filtra argumentos recebidos
  * 
- * @param {string} args - argumento passados pelo usuáio.
+ * @param {string} [arg="args"] - argumento passados pelo usuáio.
  * @returns {string} versão da cli ou ajuda.
+ * 
+ * @example
+ * resolveArgs('--version')
  */
 
 const resolveArgs = (arg: string = args): string => {

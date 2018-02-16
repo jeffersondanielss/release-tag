@@ -7,6 +7,9 @@ const { execSync } = require('child_process')
  * 
  * @param {string} cmd - comando bash recebido.
  * @returns {string} terminal output do comando recebido.
+ * 
+ * @example
+ * command('git describe')
  */
 
 const command = (cmd: string): string =>

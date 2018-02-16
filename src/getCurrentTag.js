@@ -7,8 +7,11 @@ const command = require('./command')
  * Tag mais recente do projeto ou uma tag nova caso não exista nenhuma.
  * 
  * @param {string} type - tipo de tag a ser incrementada.
- * @param {string} cmd - comando que exibe a tag mais recente do git.
+ * @param {string} [cmd="git describe"] - comando que exibe a tag mais recente do git.
  * @returns {string} tag mais recente ou uma nova caso inexistente.
+ * 
+ * @example
+ * getCurrentTag('minor', 'git describe')
  */
 
 const getCurrentTag = (type: string, cmd: string = 'git describe'): string => {

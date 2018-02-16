@@ -9,6 +9,9 @@ const createDevTag = require('./createDevTag')
  * @param {Array<string|number>} tag - Array com os campos da tag atual.
  * @param {number} targetIndex - item do array que foi solicitada a alteração.
  * @returns {string} nova tag a ser registrada no git.
+ * 
+ * @example
+ * increment([1, 0, 0, 'develop'], 3)
  */
 
 const increment = (tag: Array<string | number>, targetIndex: number): string => {

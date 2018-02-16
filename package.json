@@ -7,13 +7,13 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src/ -d lib/",
-    "type": "yarn flow status",
+    "type": "npx flow status",
     "test": "nyc ava -v",
-    "lint": "node_modules/jshint/bin/jshint ./lib/*.js",
-    "doctor": "yarn build && yarn type && yarn test && yarn lint",
-    "doc:prepare": "yarn jsdoc --configure .jsdoc.json --verbose",
+    "lint": "npx jshint ./lib/*.js",
+    "doctor": "npm run build && npm run type && npm run test && npm run lint",
+    "doc:prepare": "npx jsdoc --configure .jsdoc.json --verbose",
     "doc:server": "http-server ./documentation",
-    "doc": "yarn build && yarn doc:prepare && yarn doc:server"
+    "doc": "npm run build && npm run doc:prepare && npm run doc:server"
   },
   "dependencies": {
     "ava": "^0.22.0",
