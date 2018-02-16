@@ -36,6 +36,8 @@ Scripts useful at the time of development, example:
 $ yarn test
 ```
 
+## Comands
+
 command | description 
 --------| -----------
 build | Remove the types and build in the / lib folder
