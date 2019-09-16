@@ -31,8 +31,8 @@ test('Incrementar array dependendo do tipo minor de release', t => {
   t.is(operation, result)
 })
 
-test('Incrementar array dependendo do tipo path de release', t => {
-  let operation = filterType('path', [5, 0, 2, 1, 'develop'])
+test('Incrementar array dependendo do tipo patch de release', t => {
+  let operation = filterType('patch', [5, 0, 2, 1, 'develop'])
   let result = '5.0.3'
 
   t.is(operation, result)
