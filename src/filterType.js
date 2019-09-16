@@ -21,7 +21,7 @@ const filterType = (type: string, tag: Array<string | number>): string => {
     case 'minor':
       return increment(tag, 1)
 
-    case 'path':
+    case 'patch':
       return increment(tag, 2)
 
     default:
